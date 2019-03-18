@@ -63,6 +63,22 @@ func (list *DLinkedList) Delete(value int) {
 	}
 }
 
+// Contains function checks if the given value is present in the list
+func (list *DLinkedList) Contains(value int) bool {
+	node := list.head
+	for {
+		if node != nil {
+			if node.value == value {
+				return true
+			}
+			node = node.next
+		} else {
+			break
+		}
+	}
+	return false
+}
+
 // Insert a new value to the linked list
 func (list *DLinkedList) Insert(value int) {
 	node := newNode(value)

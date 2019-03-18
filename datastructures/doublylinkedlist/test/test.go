@@ -37,11 +37,15 @@ func main() {
 	fmt.Println("Delete 4")
 	list.Delete(4)
 
+	fmt.Println("Contains 1? - ", list.Contains(1))
+
 	fmt.Println("Print list")
 	list.Print()
 
 	fmt.Println("Insert 1")
 	list.Insert(1)
+
+	fmt.Println("Contains 1? - ", list.Contains(1))
 
 	fmt.Println("Print list")
 	list.Print()
